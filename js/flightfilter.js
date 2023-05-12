@@ -21,26 +21,53 @@
 //   }
 // } 
 
-document.getElementById("dropbtn").onclick=function(display){
+// document.getElementById("dropbtn").onclick=function(display){
     
+//   var display = document.getElementById('myDropdown');
+  
+
+// if (display.style.display === '') {
+//   display.style.display = 'none';
+  
+// }else{
+//   display.style.display = '';
+
+//   } 
+
+// };
+
+document.getElementById("dropbtn").onclick = function() {
   var display = document.getElementById('myDropdown');
-  
 
-if (display.style.display === '') {
-  display.style.display = 'none';
-  
-}else{
-  display.style.display = '';
-
+  if (display.style.display === '') {
+    display.style.display = 'none';
+  } else {
+    display.style.display = '';
   } 
-
 };
+
+document.getElementById("dropbtn2").onclick = function() {
+  var display = document.getElementById('myDropdown2');
+
+  if (display.style.display === '') {
+    display.style.display = 'none';
+  } else {
+    display.style.display = '';
+  } 
+};
+
 
 var button = document.getElementsByClassName("end")[0];
 
 
 button.onclick = function () {
   myDropdown.style.display = "none"
+};
+
+var button = document.getElementsByClassName("end1")[0];
+
+button.onclick = function () {
+  myDropdown2.style.display = "none"
 }
 
 //modal
@@ -91,3 +118,5 @@ depart.style.display = "none"
 //     modal.style.display = 'none'
 //   }
 // }
+
+
