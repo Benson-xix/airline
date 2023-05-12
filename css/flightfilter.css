@@ -59,6 +59,16 @@ body {
     }
 }
 
+@media only screen and (max-width: 1440px){
+    .side-section {
+        padding-right: 1.5em;
+        width: 342px;
+        height: fit-content;
+        min-height: 0;
+    }
+}
+
+
 .content {
     flex: 0 0 73%;
     max-width: 73%;
@@ -167,31 +177,29 @@ body {
 
 .why .icon  {
     width: 15px;
-    font-size: 30px;
+    font-size: 10px;
     line-height: 1rem;
     height: 10px;    
     color:#766F6F;
-    margin-top: .1em;
+    margin-top: -1em;
     cursor: pointer;
     display:inline-block;
     transform: rotate(-90deg);
     fill: 0;
-    font-weight: 400;
     font-optical-sizing: 48;
 }
 
 .why .icon.upside-down {
     transform: rotate(90deg);
     width: 15px;
-    font-size: 30px;
+    font-size: 10px;
     line-height: 1rem;
     height: 10px;    
     color:#766F6F;
-    margin-top: .1em;
+    margin-top: 1em;
     cursor: pointer;
     display:inline-block;
     fill: 0;
-    font-weight: 400;
     font-optical-sizing: 48;
   }
 
@@ -1652,7 +1660,8 @@ height: 17px;
     .content .as  .right-div {
         width: 40%;
         height: 100%;
-        background-color: #bed3dd;
+        background-color:  rgba(57,154,244,.05);
+        padding-right: 1em;
     }
 
     .shape {
