@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/flightfilter.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="./js/flightfilter.js"></script>
     <title>Filter</title>
 </head>
+
 <body>
-    <div class="container" >
+    <div class="container">
         <!-- side bar -->
         <div class="side-section">
             <div class="first">
@@ -29,237 +33,243 @@
                     </div>
                 </div>
                 <!-- slider-->
-                <div class="collapse" id="range1" >
-                      <div class="range" >
-                  <div class="range-slider">
-                    <input type="range" value="100000" min="100000" max="4000000" step="400">
-                    <input type="range" value="4000000" min="100000" max="4000000" step="400">
-                    <span class="range-values"></span>
-                  </div>
-                </div> 
+                <div class="collapse" id="range1">
+                    <div class="range">
+                        <div class="range-slider">
+                            <div class="flex">
+                                <input type="range" value="100000" min="100000" max="4000000" step="400">
+                                <input type="range" value="4000000" min="100000" max="4000000" step="400">
+                            </div>
+
+                            <span class="range-values"></span>
+                        </div>
+                    </div>
                 </div>
-                
-                </div>
-              
+
+            </div>
+
 
 
             <div class="third">
                 <div class="slider">
-                    <p>Price</p>
-                    <div class="why">
+                    <p>Payment</p>
+                    <div class="why" style="margin-left: 11em;">
                         <a href="">Clear</a>
                         <span onclick="myFunction2()" class="icon">></span>
-                    </div> 
+                    </div>
                 </div>
 
                 <div class="collapse" id="range2">
-                     <div class="check">
+                    <div class="check">
                         <form>
                             <input id="filter1" checked type="checkbox" id="pay-small" name="pay-small" value="">
-                            <label   for="pay-small">Pay Small Small</label><br>
+                            <label for="pay-small">Pay Small Small</label><br>
                             <input id="filter2" checked type="checkbox" id="none" name="none" value="Car">
                             <label for="none"> None </label><br>
-                          </form>
+                        </form>
                     </div>
                 </div>
 
-                   
+
             </div>
 
             <div class="fourth">
-               <div class="slider">
-                <p>Price</p>
-                <div class="why">
-                    <a href="">Clear</a>
-                    <span onclick="myFunction3()" class="icon">></span>
+                <div class="slider">
+                    <p>Stops</p>
+                    <div class="why" style="margin-left: 12.5em;">
+                        <a href="">Clear</a>
+                        <span onclick="myFunction3()" class="icon">></span>
+                    </div>
                 </div>
-               </div>
 
-               <div class="collapse" id="range3">
-                   <div class="box">
-                <div class="box1">
-                    <div class="box1-det">
-                        <p>1</p>
+                <div class="collapse" id="range3">
+                    <div class="box">
+                        <div class="box1">
+                            <div class="box1-det">
+                                <p>1</p>
+                            </div>
+                            <h5>₦463,982</h5>
+                        </div>
+                        <div class="box1">
+                            <div class="box2-det">
+                                <p>1+</p>
+                            </div>
+                            <h5>₦741,808</h5>
+                        </div>
                     </div>
-                    <h5>₦463,982</h5>
                 </div>
-                <div class="box1">
-                    <div class="box2-det">
-                        <p>1+</p>
-                    </div>
-                    <h5>₦741,808</h5>
-                </div>
-               </div>
-               </div>
-            
+
             </div>
 
             <div class="fifth">
                 <div class="slider">
-                    <p>Price</p>
-                    <div class="why">
+                    <p>Airline</p>
+                    <div class="why" style="margin-left: 12.2em;">
                         <a href="">Clear</a>
-                            <span onclick="myFunction4()" class="icon">></span>
+                        <span onclick="myFunction4()" class="icon">></span>
                         <!-- <img src="./image/Vector (2).png" onclick="myFunction4()" alt=""> -->
-                        </div>
+                    </div>
                 </div>
-                 
+
                 <div class="collapse" id="range4">
-                      <div class="check-airline">
-                   <div class="check" id="checkbox">
-                    <div class="checkbox">
-                        <input id="filter1" type="checkbox" id="scales" checked name="scales" >
-                        <label for="scales">Ethiopian Airlines</label>
-                      </div>
+                    <div class="check-airline">
+                        <div class="check" id="checkbox">
+                            <div class="checkbox">
+                                <input id="filter1" type="checkbox" id="scales" checked name="scales">
+                                <label for="scales">Ethiopian Airlines</label>
+                            </div>
 
-                      <div class="checkbox">
-                        <input id="filter2" checked  type="checkbox" id="scales2" name="scales2" onclick="filterSelection('Qatar-Air')">
-                        <label for="scales2">Qatar Airways</label>
-                      </div>
+                            <div class="checkbox">
+                                <input id="filter2" checked type="checkbox" id="scales2" name="scales2"
+                                    onclick="filterSelection('Qatar-Air')">
+                                <label for="scales2">Qatar Airways</label>
+                            </div>
 
-                      <div class="checkbox">
-                        <input id="filter3" checked type="checkbox" id="scales3" name="scales3"  >
-                        <label for="scales3">Kenya Airways</label>
-                      </div>
+                            <div class="checkbox">
+                                <input id="filter3" checked type="checkbox" id="scales3" name="scales3">
+                                <label for="scales3">Kenya Airways</label>
+                            </div>
 
-                      <div class="checkbox">
-                        <input id="filter4" checked type="checkbox" id="scales4" name="scales4">
-                        <label for="scales4">KLM Royal Dutch</label>
-                      </div>
+                            <div class="checkbox">
+                                <input id="filter4" checked type="checkbox" id="scales4" name="scales4">
+                                <label for="scales4">KLM Royal Dutch</label>
+                            </div>
 
-                      <div class="checkbox">
-                        <input id="filter5" checked type="checkbox" id="scales5" name="scales5">
-                        <label for="scales5 ">Qatar Airline</label>
-                      </div>
-                   </div>
-                   <script src="./js/filter.js"></script>
+                            <div class="checkbox">
+                                <input id="filter5" checked type="checkbox" id="scales5" name="scales5">
+                                <label for="scales5 ">Qatar Airline</label>
+                            </div>
+                        </div>
+                        <script src="./js/filter.js"></script>
 
-                   <div class="cash4travel">
-                    <h6>from ₦963,548</h6>
-                    <h6>from ₦963,548</h6>
-                    <h6>from ₦963,548</h6>
-                    <h6>from ₦963,548</h6>
-                    <h6>from ₦963,548</h6>
-                   </div>
+                        <div class="cash4travel">
+                            <h6>from ₦963,548</h6>
+                            <h6>from ₦963,548</h6>
+                            <h6>from ₦963,548</h6>
+                            <h6>from ₦963,548</h6>
+                            <h6>from ₦963,548</h6>
+                        </div>
+                    </div>
                 </div>
-                </div>
-              
+
 
             </div>
 
 
             <div class="sixth">
                 <div class="slider">
-                    <p>Price</p>
-                    <div class="why">
+                    <p>Flexibility</p>
+                    <div class="why" style="margin-left: 10.5em;">
                         <a href="">Clear</a>
                         <span onclick="myFunction5()" class="icon">></span>
                     </div>
                 </div>
 
                 <div class="collapse" id="range5">
-                <div class="check">
                     <div class="check">
-                        <div class="checkbox1">
-                            <input id="filter1" checked type="checkbox" id="scalez" name="scalez" >
-                            <label for="scalez">Refundable</label>
+                        <div class="check">
+                            <div class="checkbox1">
+                                <input id="filter1" checked type="checkbox" id="scalez" name="scalez">
+                                <label for="scalez">Refundable</label>
+                            </div>
+
+                            <div class="checkbox1">
+                                <input id="filter2" checked type="checkbox" id="scalez2" name="scalez2">
+                                <label for="scalez2">Non-Refundable </label>
+                            </div>
                         </div>
-                        
-                        <div class="checkbox1">
-                            <input id="filter2" checked type="checkbox" id="scalez2" name="scalez2" >
-                            <label for="scalez2">Non-Refundable </label>
-                        </div>
-        </div>
-                </div>
+                    </div>
                 </div>
 
-               
+
             </div>
         </div>
         <!-- content -->
-        <div class="content" >
+        <div class="content">
             <p class="help">Flights from <span>Lagos to Dubai</span></p>
             <!-- 425px -->
             <div class="header">
                 <span class="material-symbols-outlined">
                     arrow_back
                 </span>
-                 
+
                 <div class="Text-header">
                     <h5>London - Maldives</h5>
                     <p>May 16, 2023 - May 19, 2023, 1 Adult. Economy</p>
                 </div>
-                
+
                 <span class="material-symbols-outlined">
                     pen_size_3
-                    </span>
+                </span>
 
             </div>
 
-             <a href="#" class="ache"  >
-                        <div class="as" id="showdiv" onclick="showdivv" >
-                            <div class="left-div">
-                                <div class="shape">
-                                    <img src="./image/ET.gif" alt="et"> 
-                                    <h6> Ethiopian Airline</h6>
-                                   <div class="cheapest-p">
-                                    <p>Cheapest</p>
-                                   </div>
-                                </div>
-            
-                                <div class="share">
-                                    <div class="time-share">
-                                        <h5>18:35</h5>
-                                        <p>(LHR)</p>
-                                    </div>
-                                    <div class="time-stop">
-                                            <p>10h 25m</p> 
-                                            <hr class="time-border"></hr>
-                                            <p>0 Stop</p>
-                                    </div>
-                                    <div class="time-share-other">
-                                        <h5>18:35</h5>
-                                        <p>(LHR)</p>
-                                    </div>
-                                </div>
-            
-                                <div class="share">
-                                    <div class="time-share">
-                                        <h5>11:00</h5>
-                                        <p>(MLE)</p>
-                                    </div>
-                                    <div class="time-stop">
-                                        <p>11h 5m</p> 
-                                        <hr class="time-border"></hr>
-                                        <p>0 Stop</p>
-                                </div>
-            
-                                <div class="time-share-other">
-                                    <h5>18:35</h5>
-                                    <p>(LHR)</p>
-                                </div>
-            
-                                </div>
-                            </div>
-            
-                            <div class="right-div">
-                                <div class="top">
-                                    <p>Pay Full Fare</p>
-                                    <h5>₦889,617</h5>
-                                </div>
-                                <div class="bottom">
-                                    <div class="img-money">
-                                        <img src="./image/paysmallsmall.png" alt="">
-                                        <h6>  ₦112,983 </h6>
-                                    </div>
-                                    <p>Pay Small Small</p>
-                                </div>
-            
+            <a href="#" class="ache">
+                <div class="as" id="showdiv" onclick="showdivv">
+                    <div class="left-div">
+                        <div class="shape">
+                            <img src="./image/ET.gif" alt="et">
+                            <h6> Ethiopian Airline</h6>
+                            <div class="cheapest-p">
+                                <p>Cheapest</p>
                             </div>
                         </div>
-             </a> 
 
-              <div class="modal-content" id="showndiv" style="display: none;">
+                        <div class="share">
+                            <div class="time-share">
+                                <h5>18:35</h5>
+                                <p>(LHR)</p>
+                            </div>
+                            <div class="time-stop">
+                                <p>10h 25m</p>
+                                <hr class="time-border">
+                                </hr>
+                                <p>0 Stop</p>
+                            </div>
+                            <div class="time-share-other">
+                                <h5>18:35</h5>
+                                <p>(LHR)</p>
+                            </div>
+                        </div>
+
+                        <div class="share">
+                            <div class="time-share">
+                                <h5>11:00</h5>
+                                <p>(MLE)</p>
+                            </div>
+                            <div class="time-stop">
+                                <p>11h 5m</p>
+                                <hr class="time-border">
+                                </hr>
+                                <p>0 Stop</p>
+                            </div>
+
+                            <div class="time-share-other">
+                                <h5>18:35</h5>
+                                <p>(LHR)</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="right-div">
+                        <div class="top">
+                            <p>Pay Full Fare</p>
+                            <h5>₦889,617</h5>
+                        </div>
+                        <div class="bottom">
+                            <div class="img-money">
+                                <img src="./image/paysmallsmall.png" alt="">
+                                <h6> ₦112,983 </h6>
+                            </div>
+                            <p>Pay Small Small</p>
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="modal-content" id="showndiv" style="display: none;">
                 <div class="trip-summary">
                     <img class="close" src="./image/arrow_back_FILL0_wght400_GRAD0_opsz48.png" alt="">
                     <h4>Trip Summary</h4>
@@ -267,7 +277,8 @@
                 <div class="green-info">
                     <img src="./image/done_FILL0_wght400_GRAD0_opsz48.png" alt="">
                     <p>
-                        Nice job! You picked one of our best value flights.<span>Book now so you don’t miss out on this price.</span>
+                        Nice job! You picked one of our best value flights.<span>Book now so you don’t miss out on this
+                            price.</span>
                     </p>
                 </div>
 
@@ -340,29 +351,29 @@
 
 
                                 <p>
-                                   25Kg Hand Baggage
+                                    25Kg Hand Baggage
                                 </p>
 
-                            
+
                             </div>
                         </div>
 
                         <div class="transparent">
                             <div class="money-price">
-                               <div class="ego">
-                                <h4>
-                                    ₦902,308 
-                                </h4>
+                                <div class="ego">
+                                    <h4>
+                                        ₦902,308
+                                    </h4>
 
-                                <img src="./image/error_FILL0_wght400_GRAD0_opsz48.png" alt="">
-                               </div>
+                                    <img src="./image/error_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                                </div>
 
                                 <p>
                                     For 1 Adult
                                 </p>
                             </div>
                             <div class="conc">
-                                <button > <a href="./FareSummary.html">CONTINUE BOOKING</a> </button>
+                                <button> <a href="./FareSummary.html">CONTINUE BOOKING</a> </button>
                             </div>
                         </div>
 
@@ -370,375 +381,379 @@
                 </div>
 
             </div>
-              <!-- 425px ends -->
-            
-        
-        <div class="nonstop">
-            <div class="ash">
-                <p>Nonstop</p>
-                <p>1 Stop</p>
-                <p>1+ <br/> Stops</p>
-            </div>
-            <div class="carosel">
-                <div class="boxes">
-                    <img src="./image/ET.gif" alt="ET">
-                    <h5>Ehiopian<br/>Airlines</h5>
-                   <div class="list">
-                    <span></span>
-                    <p>&nbsp;</p>
-                    <p> ₦463,982 </p>
-                    <p> ₦983,024 </p>
-                   </div>
-                </div>
-                <div class="boxes">
-                    <img src="./image/KL.gif" alt="KL">
-                    <h5>Qatar<br/> Airways</h5>
-                    <div class="list">
-                        <span></span>
-                        <p>&nbsp;</p>
-                        <p> ₦463,982 </p>
-                        <p> ₦983,024 </p>
-                    </div>
-                </div>
-                <div class="boxes">
-                    <img src="./image/KQ.gif" alt="KQ">
-                    <h5>Kenya <br/> Airways</h5>
-                    <div class="list">
-                        <span></span>
-                        <p>&nbsp;</p>
-                        <p> ₦463,982 </p>
-                        <p> ₦983,024 </p>
-                    </div>
-                </div>
-                <div class="boxes">
-                    <img src="./image/QR.gif" alt="QR">
-                    <h5>KLM  Royal <br/> Dutch Airlines</h5>
-                    <div class="list">
-                        <span></span>
-                        <p>&nbsp;</p>
-                        <p> ₦463,982 </p>
-                        <p> ₦983,024 </p>
-                    </div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-        </div>
+            <!-- 425px ends -->
 
-        <div class="main-sort">
-            <div class="sort">
-                <h5>Sort by  :</h5>
-                <ul>
-                    <li class="">
-                        <a href="#" tabindex="1" >
-                        Cheapest 
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="#" tabindex="2">
-                        Fastest
-                    </a>
-                    </li>
-                    <li class="">
-                        <a href="#" tabindex="3">
-                            Recommended
-                        </a>
-                    </li>
-                </ul>
+
+            <div class="nonstop">
+                <div class="ash">
+                    <p>Nonstop</p>
+                    <p>1 Stop</p>
+                    <p>1+ <br /> Stops</p>
+                </div>
+                <div class="carosel">
+                    <div class="boxes">
+                        <img src="./image/ET.gif" alt="ET">
+                        <h5>Ehiopian<br />Airlines</h5>
+                        <div class="list">
+                            <span></span>
+                            <p>&nbsp;</p>
+                            <p> ₦463,982 </p>
+                            <p> ₦983,024 </p>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <img src="./image/KL.gif" alt="KL">
+                        <h5>Qatar<br /> Airways</h5>
+                        <div class="list">
+                            <span></span>
+                            <p>&nbsp;</p>
+                            <p> ₦463,982 </p>
+                            <p> ₦983,024 </p>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <img src="./image/KQ.gif" alt="KQ">
+                        <h5>Kenya <br /> Airways</h5>
+                        <div class="list">
+                            <span></span>
+                            <p>&nbsp;</p>
+                            <p> ₦463,982 </p>
+                            <p> ₦983,024 </p>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <img src="./image/QR.gif" alt="QR">
+                        <h5>KLM Royal <br /> Dutch Airlines</h5>
+                        <div class="list">
+                            <span></span>
+                            <p>&nbsp;</p>
+                            <p> ₦463,982 </p>
+                            <p> ₦983,024 </p>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
 
-            <div class="group-sort">
-                <h5>Group by:</h5>
-                <ul>
-                <li><a href="#">Airline</a>
-                </li>
-                </ul>
-            </div>
-        </div>
+            <div class="main-sort">
+                <div class="sort">
+                    <h5>Sort by :</h5>
+                    <ul>
+                        <li class="">
+                            <a href="#" tabindex="1">
+                                Cheapest
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" tabindex="2">
+                                Fastest
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" tabindex="3">
+                                Recommended
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="options">
+                <div class="group-sort">
+                    <h5>Group by:</h5>
+                    <ul>
+                        <li><a href="#">Airline</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="options">
                 <div class="item filter1">
-                <div class="view">
-               <div class="left">
-                <h5>Cheapest</h5>
-                <div class="img-details">
-                    <div class="main-img">
-                        <img src="./image/ET.gif" alt="Et">
-                        <h4>Ethiopian <br/> Airlines</h4>
-                    </div>
-
-                    <div class="time">
-                        <p style="color:black">13:40 <span style="color:#6d8494">(LOS)</span></p>
-                        <p style="margin-top: -.5em;">Lagos</p>
-                    </div>
-
-
-                    <div class="hr-stops">
-                        <p>10h 15m</p> 
-                        <hr class="time-border"></hr>
-                        <p>1 Stop</p>
-                    </div>
-
-                    <div class="time">
-                        <p style="color:black">02:55 <span style="color:#6d8494">(DXB)</span></p>
-                        <p style="margin-top: -.5em;">Dubai</p>
-                    </div>
-                </div>
-               </div>
-               <div class="right">
-                <div class="right-left">
-                    <div class="fare">
-                        <h5>Pay full Fare</h5>
-                    </div>
-                    <div class="under">
-                        <div class="left-under">
-                            <img src="./image/paysmallsmall.png" alt="">
-                        </div>
-                        <div class="middle-under">
-                            <h6>Pay Small Small</h6>
-                        <div class="under-under">
-                            <h5>₦123,285</h5>
-                            <img src="./image/error_FILL0_wght400_GRAD0_opsz48.png" alt="">
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="price-view">
-                    <h4>₦463,982</h4>
-                    <button  id="dropbtn" onclick="drop">View</button>
-                    <script src="./js/flightfilter.js"></script>
-                    <div class="MyDropdown" style="display: none;" id="myDropdown">
-                            <div class="depature">
-                                <div class="header" style="display: flex;">
-                                    <ul>
-                                        <li>
-                                            <a href="#" tabindex="1">Itinerary</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#" tabindex="2">
-                                                Fare rules
-                                            </a>
-                                        </li>
-                                    </ul>
+                    <div class="view">
+                        <div class="left">
+                            <h5>Cheapest</h5>
+                            <div class="img-details">
+                                <div class="main-img">
+                                    <img src="./image/ET.gif" alt="Et">
+                                    <h4>Ethiopian <br /> Airlines</h4>
                                 </div>
-                                <div class="depature-details">
-                                    <div class="depature-flight">
-                                        <img src="./image/download.png" alt="">
-                                        <h5>Depature flight : Lagos - Dubai</h5>
+
+                                <div class="time">
+                                    <p style="color:black">13:40 <span style="color:#6d8494">(LOS)</span></p>
+                                    <p style="margin-top: -.5em;">Lagos</p>
+                                </div>
+
+
+                                <div class="hr-stops">
+                                    <p>10h 15m</p>
+                                    <hr class="time-border">
+                                    </hr>
+                                    <p>1 Stop</p>
+                                </div>
+
+                                <div class="time">
+                                    <p style="color:black">02:55 <span style="color:#6d8494">(DXB)</span></p>
+                                    <p style="margin-top: -.5em;">Dubai</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right-left">
+                                <div class="fare">
+                                    <h5>Pay full Fare</h5>
+                                </div>
+                                <div class="under">
+                                    <div class="left-under">
+                                        <img src="./image/paysmallsmall.png" alt="">
                                     </div>
-                                    <div class="date-flight">
-                                        <div class="date-des1">
-                                            <h5>Tue, may 02</h5>
+                                    <div class="middle-under">
+                                        <h6>Pay Small Small</h6>
+                                        <div class="under-under">
+                                            <h5>₦123,285</h5>
+                                            <img src="./image/error_FILL0_wght400_GRAD0_opsz48.png" alt="">
                                         </div>
-                                        <div class="date-des">
-                                            <div class="image-plane"><img src="./image/ET.gif" alt=""></div>
-                                            <div class="flight-text">
-                                                <h5>13:40 - 21:00</h5>
-                                                <p>Lagos (Murtala Muhammed <br/> International Airport) (LOS) - Addis <br/> Ababa(Addis Ababa) (ADD)</p>
-                                                <h6>Ethiopian Airlines . 900 . Class S</h6>
-                                            </div>
-                                        </div>
-                                        <div class="date-dess">
-                                            <h6>Ecconomy</h6>
-                                            <p>5h 20M</p>
-                                        </div>
-                                    </div>
-                                    <div class="layover">
-                                        <p>Layover:at Addis Ababa (Addis Ababa)</p>
-                                        <h5>3h 10M</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="fare-summary">
-                                    <div class="contain-summary">
-                                        <div class="fare-text">
-                                            <h6>Fare Summary</h6>
-                                        </div>
+                            <div class="price-view">
+                                <h4>₦463,982</h4>
+                                <button id="dropbtn" onclick="drop">View</button>
+                                <script src="./js/flightfilter.js"></script>
+                                <div class="MyDropdown" style="display: none;" id="myDropdown">
+                                    <div class="depature">
+                                        <div class="header" style="display: flex;">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" tabindex="1">Itinerary</a>
+                                                </li>
 
-                                        <div class="transfer">
-                                            <div class="trav">
-                                                <h6>Traveler(S)</h6>
-                                                <p>Adult (x1)</p>
+                                                <li>
+                                                    <a href="#" tabindex="2">
+                                                        Fare rules
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="depature-details">
+                                            <div class="depature-flight">
+                                                <img src="./image/download.png" alt="">
+                                                <h5>Depature flight : Lagos - Dubai</h5>
+                                            </div>
+                                            <div class="date-flight">
+                                                <div class="date-des1">
+                                                    <h5>Tue, may 02</h5>
+                                                </div>
+                                                <div class="date-des">
+                                                    <div class="image-plane"><img src="./image/ET.gif" alt=""></div>
+                                                    <div class="flight-text">
+                                                        <h5>13:40 - 21:00</h5>
+                                                        <p>Lagos (Murtala Muhammed <br /> International Airport) (LOS) -
+                                                            Addis <br /> Ababa(Addis Ababa) (ADD)</p>
+                                                        <h6>Ethiopian Airlines . 900 . Class S</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="date-dess">
+                                                    <h6>Ecconomy</h6>
+                                                    <p>5h 20M</p>
+                                                </div>
+                                            </div>
+                                            <div class="layover">
+                                                <p>Layover:at Addis Ababa (Addis Ababa)</p>
+                                                <h5>3h 10M</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fare-summary">
+                                        <div class="contain-summary">
+                                            <div class="fare-text">
+                                                <h6>Fare Summary</h6>
                                             </div>
 
-                                            <div class="travel-price">
+                                            <div class="transfer">
+                                                <div class="trav">
+                                                    <h6>Traveler(S)</h6>
+                                                    <p>Adult (x1)</p>
+                                                </div>
+
+                                                <div class="travel-price">
+                                                    <p>₦463,982</p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="tot">
+                                                <h6>Total</h6>
                                                 <p>₦463,982</p>
                                             </div>
 
-                                        </div>
+                                            <div class="ref">
+                                                <p>
+                                                    *Refundable.<br /> <br />
+                                                    *Total fare displayed above
+                                                    has been rounded off and may thus show
+                                                    a slight difference.
+                                                </p>
+                                            </div>
 
-                                        <div class="tot">
-                                            <h6>Total</h6>
-                                            <p>₦463,982</p>
+                                            <div class="Book-btn">
+                                                <button>Book</button>
+                                            </div>
                                         </div>
-
-                                        <div class="ref">
-                                           <p>
-                                            *Refundable.<br/> <br/>
-                                            *Total fare displayed above
-                                             has been rounded off and may thus show 
-                                             a slight difference.
-                                           </p>
-                                        </div>
-
-                                        <div class="Book-btn">
-                                            <button>Book</button>
+                                        <div>
+                                            <button class="end">X</button>
                                         </div>
                                     </div>
-                                    <div>
-                                    <button class="end" >X</button>
-                                    </div>
+                                </div>
+
                             </div>
+                        </div>
                     </div>
-                    
-                </div>
-               </div>
-                </div>           
                 </div>
 
                 <div class="item filter2">
-                <div class="view" >
-                <div class="left">
-                 <h5 style="background-color:#399af4;">Expensive</h5>
-                 <div class="img-details">
-                     <div class="main-img">
-                         <img src="./image/QR.gif" alt="Et">
-                         <h4>Qatar<br/> Airlines</h4>
-                     </div>
- 
-                     <div class="time">
-                         <p style="color:black">13:40 <span style="color:#6d8494">(LOS)</span></p>
-                         <p style="margin-top: -.5em;">Lagos</p>
-                     </div>
- 
- 
-                     <div class="hr-stops">
-                         <p>10h 15m</p> 
-                         <hr class="time-border"></hr>
-                         <p>1 Stop</p>
-                     </div>
- 
-                     <div class="time">
-                         <p style="color:black">02:55 <span style="color:#6d8494">(DXB)</span></p>
-                         <p style="margin-top: -.5em;">Dubai</p>
-                     </div>
-                 </div>
-                </div>
-                <div class="right">
-                 <div class="right-left">
-                     <div class="fare">
-                         <h5>Most Pay full Fare</h5>
-                     </div>
-                     <div class="under">
-                         <div class="left-under">
-                             <img src="./image/paysmallsmall.png" alt="">
-                         </div>
-                         <div class="middle-under">
-                             <h6>Most pay full Fare</h6>
-                         <div class="under-under">
-                             <h5>₦923,285</h5>
-                             <img src="./image/error_FILL0_wght400_GRAD0_opsz48.png" alt="">
-                         </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="price-view">
-                     <h4>₦963,982</h4>
-                     <button  id="dropbtn2" onclick="drop">View</button>
-                     <script src="./js/flightfilter.js"></script>
-                     <div class="MyDropdown2" style="display: none;" id="myDropdown2">
-                             <div class="depature">
-                                 <div class="header" style="display: flex;">
-                                     <ul>
-                                         <li>
-                                             <a href="#" tabindex="1">Itinerary</a>
-                                         </li>
- 
-                                         <li>
-                                             <a href="#" tabindex="2">
-                                                 Fare rules
-                                             </a>
-                                         </li>
-                                     </ul>
-                                 </div>
-                                 <div class="depature-details">
-                                     <div class="depature-flight">
-                                         <img src="./image/download.png" alt="">
-                                         <h5>Depature flight : Lagos - Dubai</h5>
-                                     </div>
-                                     <div class="date-flight">
-                                         <div class="date-des1">
-                                             <h5>Tue, may 02</h5>
-                                         </div>
-                                         <div class="date-des">
-                                             <div class="image-plane"><img src="./image/ET.gif" alt=""></div>
-                                             <div class="flight-text">
-                                                 <h5>13:40 - 21:00</h5>
-                                                 <p>Lagos (Murtala Muhammed <br/> International Airport) (LOS) - Addis <br/> Ababa(Addis Ababa) (ADD)</p>
-                                                 <h6>Ethiopian Airlines . 900 . Class S</h6>
-                                             </div>
-                                         </div>
-                                         <div class="date-dess">
-                                             <h6>Ecconomy</h6>
-                                             <p>5h 20M</p>
-                                         </div>
-                                     </div>
-                                     <div class="layover">
-                                         <p>Layover:at Addis Ababa (Addis Ababa)</p>
-                                         <h5>3h 10M</h5>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="fare-summary">
-                                     <div class="contain-summary">
-                                         <div class="fare-text">
-                                             <h6>Fare Summary</h6>
-                                         </div>
- 
-                                         <div class="transfer">
-                                             <div class="trav">
-                                                 <h6>Traveler(S)</h6>
-                                                 <p>Adult (x1)</p>
-                                             </div>
- 
-                                             <div class="travel-price">
-                                                 <p>₦463,982</p>
-                                             </div>
- 
-                                         </div>
- 
-                                         <div class="tot">
-                                             <h6>Total</h6>
-                                             <p>₦463,982</p>
-                                         </div>
- 
-                                         <div class="ref">
-                                            <p>
-                                             *Refundable.<br/> <br/>
-                                             *Total fare displayed above
-                                              has been rounded off and may thus show 
-                                              a slight difference.
-                                            </p>
-                                         </div>
- 
-                                         <div class="Book-btn">
-                                             <button>Book</button>
-                                         </div>
-                                     </div>
-                                     <div>
-                                     <button class="end1" >X</button>
-                                     </div>
-                             </div>
-                     </div>
-                     
-                 </div>
-                </div>
-                </div>
+                    <div class="view">
+                        <div class="left">
+                            <h5 style="background-color:#399af4;">Expensive</h5>
+                            <div class="img-details">
+                                <div class="main-img">
+                                    <img src="./image/QR.gif" alt="Et">
+                                    <h4>Qatar<br /> Airlines</h4>
+                                </div>
+
+                                <div class="time">
+                                    <p style="color:black">13:40 <span style="color:#6d8494">(LOS)</span></p>
+                                    <p style="margin-top: -.5em;">Lagos</p>
+                                </div>
+
+
+                                <div class="hr-stops">
+                                    <p>10h 15m</p>
+                                    <hr class="time-border">
+                                    </hr>
+                                    <p>1 Stop</p>
+                                </div>
+
+                                <div class="time">
+                                    <p style="color:black">02:55 <span style="color:#6d8494">(DXB)</span></p>
+                                    <p style="margin-top: -.5em;">Dubai</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right-left">
+                                <div class="fare">
+                                    <h5>Most Pay full Fare</h5>
+                                </div>
+                                <div class="under">
+                                    <div class="left-under">
+                                        <img src="./image/paysmallsmall.png" alt="">
+                                    </div>
+                                    <div class="middle-under">
+                                        <h6>Most pay full Fare</h6>
+                                        <div class="under-under">
+                                            <h5>₦923,285</h5>
+                                            <img src="./image/error_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-view">
+                                <h4>₦963,982</h4>
+                                <button id="dropbtn2" onclick="drop">View</button>
+                                <script src="./js/flightfilter.js"></script>
+                                <div class="MyDropdown2" style="display: none;" id="myDropdown2">
+                                    <div class="depature">
+                                        <div class="header" style="display: flex;">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" tabindex="1">Itinerary</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#" tabindex="2">
+                                                        Fare rules
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="depature-details">
+                                            <div class="depature-flight">
+                                                <img src="./image/download.png" alt="">
+                                                <h5>Depature flight : Lagos - Dubai</h5>
+                                            </div>
+                                            <div class="date-flight">
+                                                <div class="date-des1">
+                                                    <h5>Tue, may 02</h5>
+                                                </div>
+                                                <div class="date-des">
+                                                    <div class="image-plane"><img src="./image/ET.gif" alt=""></div>
+                                                    <div class="flight-text">
+                                                        <h5>13:40 - 21:00</h5>
+                                                        <p>Lagos (Murtala Muhammed <br /> International Airport) (LOS) -
+                                                            Addis <br /> Ababa(Addis Ababa) (ADD)</p>
+                                                        <h6>Ethiopian Airlines . 900 . Class S</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="date-dess">
+                                                    <h6>Ecconomy</h6>
+                                                    <p>5h 20M</p>
+                                                </div>
+                                            </div>
+                                            <div class="layover">
+                                                <p>Layover:at Addis Ababa (Addis Ababa)</p>
+                                                <h5>3h 10M</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fare-summary">
+                                        <div class="contain-summary">
+                                            <div class="fare-text">
+                                                <h6>Fare Summary</h6>
+                                            </div>
+
+                                            <div class="transfer">
+                                                <div class="trav">
+                                                    <h6>Traveler(S)</h6>
+                                                    <p>Adult (x1)</p>
+                                                </div>
+
+                                                <div class="travel-price">
+                                                    <p>₦463,982</p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="tot">
+                                                <h6>Total</h6>
+                                                <p>₦463,982</p>
+                                            </div>
+
+                                            <div class="ref">
+                                                <p>
+                                                    *Refundable.<br /> <br />
+                                                    *Total fare displayed above
+                                                    has been rounded off and may thus show
+                                                    a slight difference.
+                                                </p>
+                                            </div>
+
+                                            <div class="Book-btn">
+                                                <button>Book</button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="end1">X</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            
-        </div>
+
+            </div>
         </div>
     </div>
     <script src="./js/flightfilter.js"></script>
